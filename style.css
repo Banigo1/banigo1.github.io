@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Mobile Navigation */
 
-.mobile-nav-t {
+.mobile-nav-toggle {
   position: fixed;
   right: 15px;
   top: 15px;
@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
   outline: none !important;
   background-color: #149ddd;
   color: #fff;
-  width: 20px;
+  width: 40px;
   height: 40px;
   display: inline-flex;
   align-items: center;
@@ -176,8 +176,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100vh;
   background: url("assets/img/Background 1.jpg") top center;
-  background: size 100%
-  /* background-repeat: no-repeat; */
+  background-size: cover;
+  
 
 }
 
