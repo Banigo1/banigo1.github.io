@@ -177,8 +177,6 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   background: url("assets/img/Background 3.jpg") top center;
   background-size: cover;
-  
-
 }
 
 #hero:before {
@@ -798,31 +796,6 @@ form button{
     max-width: 100%;
     height: auto;
   }
-/* .fa-paper-plane{
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background: #fff;
-  font-size: 15px;
-  padding: 20px;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}  */
-
-  
-/* .fa-paper-plane{
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background: #fff;
-  font-size: 26px;
-  padding: 20px;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
- */
 
     /*--------------------------------------------------------------
   # Breadcrumbs
@@ -873,7 +846,7 @@ form button{
 
 /*===================================================================== */
 
-/*--------------------------------------------------------------
+/*-------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
 /* .facts {
