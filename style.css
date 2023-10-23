@@ -1,10 +1,3 @@
-/**
-* Template Name: iPortfolio - v3.3.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -68,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 300px;
+  width: 230px;
   transition: all ease-in-out 0.5s;
   z-index: 9997;
   transition: all 0.5s;
@@ -124,21 +117,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 300px;
 }
 
-@media (max-width: 1199px) {
-  #header {
-    left: -300px;
-  }
-  #main {
-    margin-left: 0;
-  }
-}
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu {
-  padding: 30px 0 0 0;
+  padding: 20px 0 0 0;
 }
 
 .nav-menu * {
@@ -178,6 +162,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Mobile Navigation */
+
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
@@ -213,9 +198,13 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("assets/img/Background 3.jpg") top center;
-  background-size: 100%
-
+  background: url("assets/img/Background 3.jpg");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-position-x: center;
+  background-size: cover;
+  
+  
 }
 #hero:before {
   content: "";
@@ -256,23 +245,6 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 3px solid #149ddd;
 }
 
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
-}
-
-@media (max-width: 768px) {
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Sections General
@@ -287,7 +259,7 @@ section {
 }
 
 .section-title {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .section-title h2 {
@@ -409,7 +381,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -675,15 +647,17 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact {
+  /* display: flex; */
+  padding: 40px 10px 100px;
   padding-bottom: 130px;
+
   background-color: #fff;
 }
 
 .contact .info {
-  padding: 30px;
+  padding: 5px 5px 100px;
   background: #fff;
-  width: 100%;
-  /* box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); */
+  /* box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.12); */
 }
 
 .contact .info i {
@@ -748,100 +722,135 @@ section {
   color: #fff;
 }
 
-.contact .php-email-form {
+/*--------------------------------------------------------------
+ Contact Form
+--------------------------------------------------------------*/
+
+.container form{
   width: 100%;
-  padding: 30px;
+  max-width:800px;
+  padding: 10px 20px 100px;
   background: #fff;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-}
-
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-
-.contact .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form .form-group {
-  margin-bottom: 15px;
-}
-
-.contact .php-email-form label {
-  padding-bottom: 8px;
-}
-
-.contact .php-email-form input, .contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-}
-
-.contact .php-email-form input {
-  height: 44px;
-}
-
-.contact .php-email-form textarea {
-  padding: 10px 15px;
-}
-
-.contact .php-email-form button[type="submit"] {
-  background: #149ddd;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
   border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); */
+  position: relative;
 }
 
-.contact .php-email-form button[type="submit"]:hover {
-  background: #37b3ed;
+.input-group{
+  width: 70%;
+  align-items: left;
+  margin: 10px 40px;
+  position: relative;
+}
+.input-group label{
+  flex-basis:100%;
+  font-size: smaller;
+}
+.input-group input, .input-group textarea{
+  flex-basis: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #999;
+  color: #333;
+  font-size: 16px;
+}
+::placeholder{
+  font-size: 12px;
+}
+
+form button{
+  background: #141a34;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 5px 10px;
+  outline: 0;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto 100px;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  padding: 15px;
+  color: white;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 230px;
+  z-index: 9999;
+  background: #040b14;
+}
+
+#footer .copyright {
+  text-align: center;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 13px;
+  color: #040b14;
+}
+
+.fade-in {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: scroll;
+    background-size: cover;
+    background-position-x: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    font-weight:bolder;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: 100%;
+    background-position-x: left;
+  }
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+ 
+  #form {
+        display: flex;
+
+  }
+}
+
+@media (max-width: 1199px) {
+  #header {
+    left: -300px;
+  }
+  #main {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  #footer {
+    position: static;
+    width: auto;
+    padding-right: 20px 15px;
+  }
 }
 
 @-webkit-keyframes animate-loading {
@@ -862,56 +871,42 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
- Contact Form
---------------------------------------------------------------*/
-
-.container form{
-  width: 90%;
-  max-width: 465px;
-  padding: 50px 30px 20px;
-  background: #fff;
-  border-radius: 4px;
-  font-family: "Open Sans", sans-serif;
-  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); */
-  /* position: relative; */
+@media (max-width: 768px) {
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
+  .breadcrumbs ol {
+    display: block;
+  }
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
 }
 
-.input-group{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-  position: relative;
-}
-.input-group label{
-  flex-basis: 28%;
-  font-size: smaller;
-}
-.input-group input, .input-group textarea{
-  flex-basis: 68%;
-  background: transparent;
-  border: 0;
-  outline: 0;
-  padding: 10px 0;
-  border-bottom: 1px solid #999;
-  color: #333;
-  font-size: 16px;
-}
-::placeholder{
-  font-size: 16px;
+.map-responsive{
+
+  overflow:hidden;
+
+  padding-bottom:56.25%;
+
+  position:relative;
+
+  height:0;
+
 }
 
-form button{
-  background: #141a34;
-  color: #fff;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  padding: 10px 40px;
-  outline: 0;
-  cursor: pointer;
-  display: block;
-  margin: 30px auto 10px;
+.map-responsive iframe{
+
+  left:0;
+
+  top:0;
+
+  height:100%;
+
+  width:100%;
+
+  position:absolute;
+
 }
 
 /*--------------------------------------------------------------
@@ -947,93 +942,9 @@ form button{
   content: "/";
 }
 
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-  .breadcrumbs ol {
-    display: block;
-  }
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-#footer {
-  padding: 15px;
-  color: #040b14;
-  font-size: 14px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  z-index: 9999;
-  background: #040b14;
-}
-
-#footer .copyright {
-  text-align: center;
-}
-
-#footer .credits {
-  padding-top: 5px;
-  text-align: center;
-  font-size: 13px;
-  color: #040b14;
-}
-
-@media (max-width: 1199px) {
-  #footer {
-    position: static;
-    width: auto;
-    padding-right: 20px 15px;
-  }
-}
-
-.map-responsive{
-
-  overflow:hidden;
-
-  padding-bottom:56.25%;
-
-  position:relative;
-
-  height:0;
-
-}
-
-.map-responsive iframe{
-
-  left:0;
-
-  top:0;
-
-  height:100%;
-
-  width:100%;
-
-  position:absolute;
-
-}
-
-.fade-in {
-  max-width: 100%;
-  height: auto;
-}
-
-.RageChess_youtube {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  height: 0;
-}
-.RageChess_youtube iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+/* 
+* Template Name: iPortfolio - v3.3.0
+* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/ 
