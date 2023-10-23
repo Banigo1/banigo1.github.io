@@ -198,13 +198,9 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("assets/img/Background 3.jpg");
-  background-repeat: no-repeat;
-  background-position: 100%;
-  background-position-x: center;
-  background-size: cover;
-  
-  
+  background: url("assets/img/Background 3.jpg") top center;
+  background-size: 100%
+
 }
 #hero:before {
   content: "";
