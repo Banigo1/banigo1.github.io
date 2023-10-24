@@ -200,6 +200,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   background: url("assets/img/pexels-steve-johnson-1981468.jpg") top center;
   background-size: cover;
+  font-weight:bolder;
   background-repeat:no-repeat;
   background-position: 100%;
 
