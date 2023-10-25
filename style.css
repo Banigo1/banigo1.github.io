@@ -201,7 +201,7 @@ h1, h2, h3, h4, h5, h6 {
   background: url("assets/img/Background 2.jpg") top center;
   background-size: cover;
   font-weight:bolder;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position: 100%;
 
 }
