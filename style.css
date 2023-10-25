@@ -754,7 +754,7 @@ section {
   padding: 10px 0;
   border-bottom: 1px solid #999;
   color: #333;
-  font-size: 16px;
+  font-size: 14px;
 }
 ::placeholder{
   font-size: 14px;
@@ -764,12 +764,13 @@ section {
   position :absolute;
   bottom: 12px;
   right: 17px;
-  font-size: 17px;
+  font-size: 12px;
   color: red;
 }
 
 #submit-error{
   color: red;
+  font-size: 12px
 
 }
 

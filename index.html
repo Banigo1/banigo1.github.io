@@ -118,7 +118,7 @@
 
         <div class="section-title">
           <h2>Resume</h2>
-          <p style="text-align:left;">I specialize in Web development, Mobile app development and IT Consultancy. I have  a Bachelor Degree in Computer Science from Federal University Otuoke. I aspire to acquire a Certification from ALX 70 hours Software Engineering program; a Masters and Ph.D from any reputable university in The US, UK, or Canada.</p>
+          <p style="text-align:left;">I specialize in Web development, Mobile app development and IT Consultancy. I have  a Bachelor Degree in Computer Science from Federal University Otuoke. I aspire to acquire a Certification from the ALX 70 hours Software Engineering program; a Masters and Ph.D from any reputable university in The US, UK, or Canada.</p>
         </div>
 
         <div class="row">
@@ -335,7 +335,7 @@
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
+                <h4>E-mail:</h4>
                 <p style="text-align:left;"><a href="banigoprecious@yahoo.com">banigoprecious@yahoo.com</a></p>
               </div>
 
@@ -355,8 +355,8 @@
           </div>
         </div>
       </div>
-      <br>
-      <form action="https://formsubmit.co/el/woyubo" method="POST">
+      <!-- <br> -->
+      <form onsubmit="sendEmail(); reset(); return false;">
         <i class="fas fa-paper-plane"></i>
         <!-- <div class="container" class="center"> -->
           <div class="section-title">
@@ -365,8 +365,8 @@
           </div>
   
         <div class="input-group">
-          <label>Full Name</label>
-          <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+          <label>Name</label>
+          <input type="text" placeholder="Enter your first name and last Name" id="contact-name" onkeyup="validateName()">
           <span id="name-error"></span>
         </div>
   
@@ -377,7 +377,7 @@
         </div>
   
         <div class="input-group">
-          <label>Email</label>
+          <label>E-mail</label>
           <input type="email" placeholder="Enter Email"id="contact-email" onkeyup="validateEmail()">
           <span id="email-error"></span>
         </div>   
@@ -432,6 +432,26 @@
                 
   <!-- Main JS File -->
   <script src="script.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>">
+  <script>
+        function sendEmail(){
+          Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "banigoprecious@gmail.com",
+            Password : "AFD8C3F3FCD51B7C482D5E59792AE23D4D99",
+            To : 'banigoprecious@gmail.com',
+            From : document.getElementById("contact-email").value,
+            Subject : "Contact Form Enquiry",
+            Body : "Name: " + document.getElementById("contact-name").value
+                +"<br> E-mail:" + document.getElementById("contact-email").value
+                +"<br> phone no:" + document.getElementById("contact-phone").value
+                +"<br> message:" + document.getElementById("contact-message").value
+        }).then(
+          message => alert("Message sent successfully")
+        );
+        }
+
+  </script>
 
 </body>
 
