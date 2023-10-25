@@ -826,7 +826,7 @@ form button{
   #hero {
     background-attachment: fixed;
     background-size: cover;
-    background-position-x: right;
+    background-position-x: left;
     background-position: 100%;
     background-repeat: no-repeat;
   }
