@@ -1,6 +1,5 @@
-  /**
-   * Form Validation
-   */
+  /*
+    Form Validation
 
 var nameError = document.getElementById('name-error');
 var phoneError = document.getElementById('phone-error');
@@ -46,8 +45,6 @@ phoneError.innerHTML = '<i class="fas fa-check-circle"></i>';
     return true;
 }
 
-
-
 function validateEmail(){
     var email = document.getElementById('contact-email').value;
 
@@ -63,8 +60,8 @@ function validateEmail(){
 emailError.innerHTML = '<i class="fas fa-check-circle"></i>';
     return true;
 }
-
 /*
+
 function validateMessage(){
     var message = document.getElementById('contact-message').value;
     var required =30;
@@ -88,6 +85,7 @@ function validateMessage(){
       }
     }
     */
+
 (function() {
   "use strict";
 
