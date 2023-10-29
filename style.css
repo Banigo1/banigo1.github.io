@@ -804,8 +804,7 @@ form button{
 }
 
 form button:hover {
-  opacity: 50%;
-<<<<<<< HEAD
+  opacity: 80%;
   cursor: pointer;map
 }
 
