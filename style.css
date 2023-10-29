@@ -2,7 +2,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #272829;
 }
 
@@ -17,7 +17,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -382,7 +382,7 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-.skills .progress {
+/* .skills .progress {
   height: 60px;
   display: block;
   background: none;
@@ -414,7 +414,7 @@ section {
   height: 10px;
   transition: .9s;
   background-color: #149ddd;
-}
+} */
 
 /*--------------------------------------------------------------
 # Resume
@@ -579,7 +579,7 @@ section {
 
 /*--------------------------------------------------------------
 # Portfolio Details
---------------------------------------------------------------
+----------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
 }
@@ -640,51 +640,54 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
-} */
+} 
 
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 .contact {
   /* display: flex; */
-  padding: 40px 10px 100px;
-  padding-bottom: 130px;
-
+  height: 100%;
+  width:100%;
+  padding: 20px 5px 0px;
   background-color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* padding-bottom: 130px; */
 }
 
 .contact .info {
-  padding: 5px 5px 100px;
+  padding: 0px 0px 100px;
   background: #fff;
 }
 
 .contact .info i {
-  font-size: 20px;
-  color: #149ddd;
+  font-size: 25px;
+  /* color: #149ddd; */
   float: left;
   width: 44px;
   height: 44px;
-  background: #dff3fc;
+  background: rgb(223, 243, 252);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out 0s;
 }
 
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 600;
   margin-bottom: 5px;
   color: #050d18;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
-  font-size: 14px;
-  color: #173b6c;
+  font-size: 20px;
+  color: #061b3a;
 }
 
 .contact .info .email p {
@@ -723,23 +726,23 @@ section {
 /*--------------------------------------------------------------
  Contact Form
 --------------------------------------------------------------*/
-
 .container form{
-  width: 100%;
-  max-width:800px;
-  padding: 10px 20px 100px;
+  padding: 0px 5px 10px;
   background: #fff;
   border-radius: 4px;
-  font-family: "Poppins", sans-serif;
-  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12); */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
   position: relative;
 }
 
 .input-group{
-  width: 70%;
-  align-items: left;
-  margin: 10px 40px;
+  font-weight: 300;
+  width: 48%;
+  height: 100%;
+  flex-basis:10%;
+  margin: 0px 20px;
   position: relative;
+  border: #040b14;
 }
 .input-group label{
   flex-basis:100%;
@@ -756,7 +759,8 @@ section {
   font-size: 14px;
 }
 ::placeholder{
-  font-size: 14px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .input-group span{
@@ -779,6 +783,8 @@ section {
 
 form button{
   background: #141a34;
+  height: 50px;
+  width: 70;
   color: #fff;
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.7);
@@ -790,18 +796,23 @@ form button{
   margin: 10px auto 100px;
 }
 
+form button:hover {
+  opacity: 50%;
+  cursor: pointer;map
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
   padding: 15px;
-  color: #040b14;
   font-size: 14px;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 230px;
   z-index: 9999;
+  color: #040b14;
   background: #040b14;
 }
 
@@ -831,7 +842,18 @@ form button{
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width <= 768px) {
+
+  #contact.container{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  #input-group{
+    width: 100%;
+    font: bolder;
+  }
+
   #hero {
     font-weight:bolder;
     background-attachment: fixed;
@@ -898,14 +920,14 @@ form button{
 }
 
 .map-responsive{
-
+  
   overflow:hidden;
 
-  padding-bottom:56.25%;
+  padding-bottom:100%;
 
   position:relative;
 
-  height:0;
+  width: 100%;
 
 }
 
@@ -917,7 +939,7 @@ form button{
 
   height:100%;
 
-  width:100%;
+  width: 100%;
 
   position:absolute;
 
@@ -926,7 +948,7 @@ form button{
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
-.breadcrumbs {
+/* .breadcrumbs {
   padding: 20px 0;
   background: #f9f9f9;
 }
@@ -954,7 +976,7 @@ form button{
   padding-right: 10px;
   color: #0e2442;
   content: "/";
-}
+} */
 
 /* 
 * Template Name: iPortfolio - v3.3.0

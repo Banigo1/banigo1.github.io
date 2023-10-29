@@ -58,7 +58,7 @@
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i><span>Portfolio</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -68,10 +68,14 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
-      <h1>Precious Banigo</h1>
+      <h1>Welcome!</h1>
       <br>
-      <p><span class="typed" data-typed-items="Software Engineer, Computer Scientist, Data Analyst, Front-end Developer, Collaborator, and Musician"></span></p>
+      <p><span class="typed" data-typed-items= "I am a Software Engineer, I am a Front-end Developer, I am a Computer Scientist, I am a Python Developer, and a Musician."></span></p>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
   </section><!-- End Hero -->
 
   <main id="main">
@@ -118,7 +122,7 @@
 
         <div class="section-title">
           <h2>Resume</h2>
-          <p style="text-align:left;">I specialize in Web development, Mobile app development and IT Consultancy. I have  a Bachelor Degree in Computer Science from Federal University Otuoke. I aspire to acquire a Certification from the ALX 70 hours Software Engineering program; a Masters and Ph.D from any reputable university in The US, UK, or Canada.</p>
+          <p style="text-align:left;">I have  a Bachelor Degree in Computer Science. I specialize in Web development, Mobile app development, IT solutions and Consultancy. I aspire to acquire a Certification from the ALX 70 hours Software Engineering program; a Masters and Ph.D from any reputable university in The US, UK, or Canada.</p>
         </div>
 
         <div class="row">
@@ -313,7 +317,7 @@
           <br>
         </div>
       </div>
-
+    </section>
 
     <!-- ======= Contact Section ================== -->
     
@@ -327,70 +331,81 @@
         <div class="row" data-aos="fade-in">
           <div class="col-lg-5 d-flex align-items-stretch">
             <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p style="text-align:left;">8, Banigo Close, Macauley, Bonny, Rivers State, Nigeria.</p>
-              </div>
 
+                  <!-- E-mail -->
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>E-mail:</h4>
-                <p style="text-align:left;"><a href="banigoprecious@yahoo.com">banigoprecious@yahoo.com</a></p>
+                <p style="text-align:left;">banigoprecious@yahoo.com</a></p>
               </div>
 
+                <!-- Phone -->
               <div class="phone">
                 <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
+                <h4>Phone:</h4>
                 <p style="text-align:left;">+2348036024857</p>
               </div>
+
+              <!-- Address -->
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+              <h4>Address:</h4>
+              <p style="text-align:left;">8, Banigo Close, Macauley, Bonny, Rivers State, Nigeria.</p>
+            </div>
+            
+              <!-- Map embed -->
               <div class="map-responsive">
 
-      <!-- Map embed -->
-      
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127288.06716841891!2d7.148662194089079!3d4.457139489939384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x106850dae227e747%3A0xfdab92c24461a203!2sBonny%20Island!5e0!3m2!1sen!2sng!4v1697562012840!5m2!1sen!2sng" width="455" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127288.06716841891!2d7.148662194089079!3d4.457139489939384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x106850dae227e747%3A0xfdab92c24461a203!2sBonny%20Island!5e0!3m2!1sen!2sng!4v1697562012840!5m2!1sen!2sng" width="500px" height="100%"loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- <br> -->
-      <form onsubmit="sendEmail(); reset(); return false;">
+
+      <form action="https://formspree.io/f/xdorbzyl"method="POST">
         <i class="fas fa-paper-plane"></i>
-        <!-- <div class="container" class="center"> -->
+        <div class="container" class="center">
           <div class="section-title">
             <h2 style="text-align:left;">Drop a message</h2>
             <p style="text-align:left;"></p>
           </div>
   
         <div class="input-group">
-          <label>Name</label>
-          <input type="text" placeholder="Enter your first name and last Name" id="contact-name" onkeyup="validateName()">
-          <span id="name-error"></span>
+          <!-- <label>Name</label> -->
+          <input type="text" name="first" placeholder="Name" autocomplete="on" required>
+          <!-- <input type="text" placeholder="Enter your first name and last Name" id="contact-name" onkeyup="validateName()"> -->
+          <!-- <span id="name-error"></span> -->
         </div>
   
         <div class="input-group">
-          <label>Phone No.</label>
-          <input type="tel" placeholder="123 456 7890"id="contact-phone" onkeyup="validatePhone()">
-          <span id="phone-error"></span>
+          <!-- <label>Phone Number</label> -->
+          <input type="tel" name= "phone" placeholder="Phone Number" autocomplete="on" required>
+          <!-- <input type="tel" placeholder="123 456 7890"id="contact-phone" onkeyup="validatePhone()"> -->
+          <!-- <span id="phone-error"></span> -->
         </div>
   
         <div class="input-group">
-          <label>E-mail</label>
-          <input type="email" placeholder="Enter Email"id="contact-email" onkeyup="validateEmail()">
-          <span id="email-error"></span>
+          <!-- <label>E-mail</label> -->
+          <input type="email" name="email" placeholder="E-mail Address" autocomplete="off" required>
+          <!-- <input type="email" placeholder="Enter Email"id="contact-email" onkeyup="validateEmail()"> -->
+          <!-- <span id="email-error"></span> -->
         </div>   
   
         <div class="input-group">
-          <label>Your Message</label>
-          <textarea rows="5" placeholder="Enter your message"id="contact-message" onkeyup="validateMessage()"></textarea></textarea>
-          <span id="message-error"></span>
+          <!-- <label>Message</label> -->
+          <textarea rows="5" cols="60" name="message" placeholder="Message" autocomplete="on" required></textarea>
+          <!-- <textarea rows="5" placeholder="Enter your message"id="contact-message" onkeyup="validateMessage()"></textarea></textarea> -->
+          <!-- <span id="message-error"></span> -->
+
+               <!-- <button id="btn" onclick="return validateForm()>Submit</button> -->
+      <button type="submit">Send</button>
+      <!-- <span id="submit-error"></span> -->
+     
         </div>
   
-      <button onclick="return validateForm()">Submit</button>
-      <span id="submit-error"></span>
-     
+ 
     </form>
     </section>
     
@@ -428,28 +443,31 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <!-- <script src="assets/vendor/form-validation.js"></script> -->
                 
   <!-- Main JS File -->
   <script src="script.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>">
+
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
-        function sendEmail(){
+      var btn =document.getElementById('btn');
+      btn.addEventListener ('click', function(e){
+        e.preventDefault()
+        var name = document.getElementById('contact-name').value;
+        var phome = document.getElementById('contact-phone').value;
+        var email = document.getElementById('contact-email').value;
+        var message = document.getElementById('contact-message').value;
+        var body = 'name: '+ name + '<br/> phone: '+ phone + '<br/> E-mail: '+ email + '<br/> message: '+ message;
           Email.send({
             SecureToken : "bb0d1731-1e17-4317-8e2e-362b093d2f9a",
             To : 'banigoprecious@gmail.com',
             From : document.getElementById("contact-email").value,
-            Subject : "Contact Form Enquiry",
-            Body : "Name: " + document.getElementById("contact-name").value
-                +"<br> E-mail:" + document.getElementById("contact-email").value
-                +"<br> phone no:" + document.getElementById("contact-phone").value
-                +"<br> message:" + document.getElementById("contact-message").value
+            Body : body
+           
         }).then(
           message => alert("Message sent successfully")
         );
-        }
-
-  </script>
+        })
+  </script> -->
 
 </body>
 
