@@ -380,43 +380,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
-/* .skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
-}
-
-.skills .progress .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #050d18;
-}
-
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: #dce8f8;
-  height: 10px;
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: .9s;
-  background-color: #149ddd;
-} */
-
-/*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
 .resume .resume-title {
@@ -749,14 +712,9 @@ section {
 }
 
 .input-group{
-  font-weight: 300;
-  width: 100%;
   height: 100%;
-  flex-basis:10%;
-  width: 50%;
-  margin: 0px 20px;
+  width: 35%;
   position: relative;
-  border: #040b14;
 }
 
 .input-group input, .input-group textarea{
@@ -771,7 +729,6 @@ section {
 }
 ::placeholder{
   font-size: 17px;
-  font-weight: 600;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -937,8 +894,45 @@ form button:hover {
     display: inline-block;
   }
 }/* 
+
 * Template Name: iPortfolio - v3.3.0
 * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */ 
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+/* .skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: #dce8f8;
+  height: 10px;
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: .9s;
+  background-color: #149ddd;
+} */
