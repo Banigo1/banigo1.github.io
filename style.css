@@ -860,6 +860,11 @@ form button:hover {
 @media (max-width <= 768px) {
 
   #contact{
+    display: flex;
+    justify-content: center;
+  }
+
+  #container .form{
     justify-content: center;
   }
 
