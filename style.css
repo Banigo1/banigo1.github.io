@@ -648,19 +648,18 @@ section {
 .contact {
   height: 100%;
   width:100%;
-  padding: 20px 5px 0px;
   background-color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   /* padding-bottom: 130px; */
 }
 
 .contact .info {
-  padding: 0px 0px 100px;
+  padding: 0px 0px px;
   background: #fff;
 }
 
 .contact .info i {
-  font-size: 25px;
+  font-size: 22px;
   /* color: #149ddd; */
   float: left;
   width: 44px;
@@ -722,6 +721,23 @@ section {
   color: #fff;
 }
 
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:50%;
+  position:relative;
+  width: 100%;
+
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width: 70%;
+  position:absolute;
+
+}
+
 /*--------------------------------------------------------------
  Contact Form
 --------------------------------------------------------------*/
@@ -754,8 +770,9 @@ section {
   font-size: 14px;
 }
 ::placeholder{
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .input-group span{
@@ -779,7 +796,7 @@ section {
 form button{
   background: #141a34;
   height: 50px;
-  width: 70;
+  /* width: 10%; */
   color: #fff;
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.7);
@@ -792,8 +809,8 @@ form button{
 }
 
 form button:hover {
-  opacity: 80%;
-  cursor: pointer;map
+  opacity: 50%;
+  cursor: pointer;
 }
 
 /*--------------------------------------------------------------
@@ -827,7 +844,11 @@ form button:hover {
   height: auto;
 }
 
+/*--------------------------------------------------------------
+ @media Queries
+--------------------------------------------------------------*/
 @media (min-width: 1024px) {
+
   #hero {
     background-attachment: fixed;
     background-size: cover;
@@ -838,12 +859,13 @@ form button:hover {
 
 @media (max-width <= 768px) {
 
-  #contact.div.container{
-    display: flex;
-    flex-direction: column;
-    
+  #contact{
+    justify-content: center;
   }
+
   #input-group{
+    justify-content: center;
+    height: 100%;
     width: 100%;
     font: bolder;
   }
@@ -855,8 +877,7 @@ form button:hover {
     background-position: 100%;
   }
   #hero h1 {
-    font-size: 50px;
-    /* line-height: 100px; */
+    font-size: 100px;
   }
   #hero h2 {
     font-size: 18px;
@@ -910,8 +931,7 @@ form button:hover {
   .breadcrumbs ol li {
     display: inline-block;
   }
-}
-/* 
+}/* 
 * Template Name: iPortfolio - v3.3.0
 * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
 * Author: BootstrapMade.com
