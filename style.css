@@ -783,6 +783,7 @@ form button:hover {
   z-index: 9999;
   color: #040b14;
   background: #040b14;
+  visibility: hidden;
 }
 
 #footer .copyright {
@@ -862,6 +863,7 @@ form button:hover {
     position: static;
     width: auto;
     padding-right: 20px 15px;
+    visibility: hidden;
   }
 }
 
