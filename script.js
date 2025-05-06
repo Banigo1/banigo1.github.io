@@ -210,19 +210,19 @@ function validateMessage(){
   /**
    * Hero type effect
    */
-  const typed = select('.typed')
-  if (typed) {
-    let typed_strings = typed.getAttribute('data-typed-items')
-    typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      startDelay: 1000,
-      typeSpeed: 50,
-      backSpeed: 25,
-      backDelay: 1200
-    });
-  }
+  // const typed = select('.typed')
+  // if (typed) {
+  //   let typed_strings = typed.getAttribute('data-typed-items')
+  //   typed_strings = typed_strings.split(',')
+  //   new Typed('.typed', {
+  //     strings: typed_strings,
+  //     loop: true,
+  //     startDelay: 1000,
+  //     typeSpeed: 50,
+  //     backSpeed: 25,
+  //     backDelay: 1200
+  //   });
+  // }
 
   /**
    * Skills animation
