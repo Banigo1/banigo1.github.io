@@ -854,9 +854,9 @@ form button:hover {
   }
 
   #hero {
-    /* background-attachment: scroll; */
+    background-attachment: scroll;
     background-size: cover;
-    background-position: 100%;
+    /* background-position: 100%; */
     text-align: center;
   }
   #hero h1 {
