@@ -54,7 +54,6 @@ h1, h2, h3, h4, h5, h6 {
   transition: color 0.3s ease;
   z-index: 10;
 }
-
 .scroll-down:hover {
   color: #00bcd4; /* Cyan hover effect */
 }
@@ -990,4 +989,4 @@ form button:hover {
 * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
-*/ 
+*/
