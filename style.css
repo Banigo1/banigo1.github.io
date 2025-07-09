@@ -33,12 +33,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes changetext{
-  0%{content: "Fullstack Developer";}
+  /* 0%{content: "Fullstack Developer";} */
   20%{content: "Python Developer";}
   40%{content: "WordPress Developer";}
-  60%{content: "Back-End Developer";}
+  /* 60%{content: "Back-End Developer";} */
   80%{content: "Data Analyst";}
-  100%{content: "IT Support Specialist";}
+  100%{content: "IT Support";}
 
 }
 .scroll-down {
